@@ -28,6 +28,8 @@ section {
   border-radius: 10px;
 }
 
+/* === Animações === */
+
 /* 1. Pulse Glow */
 @keyframes pulseGlow {
   0% {
@@ -156,4 +158,36 @@ button:hover {
   0%, 100% { transform: translateX(0); }
   20%, 60% { transform: translateX(-10px); }
   40%, 80% { transform: translateX(10px); }
+}
+
+/* === Fotos animadas === */
+
+/* Foto p1.jpg com Pulse Glow */
+.img-photo {
+  width: 200px;
+  height: auto;
+  border-radius: 12px;
+  margin-top: 10px;
+  display: block;
+}
+
+/* Foto p2.jpg com Rotate + Bounce */
+.avatar-photo {
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-top: 10px;
+  display: block;
+}
+
+/* Foto p3.jpg com Slide In como background */
+.photo-bg {
+  width: 300px;
+  height: 200px;
+  background-image: url('assets/p3.jpg');
+  background-size: cover;
+  background-position: center;
+  border-radius: 12px;
+  margin-top: 10px;
 }
